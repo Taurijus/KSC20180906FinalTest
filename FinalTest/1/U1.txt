@@ -1,0 +1,5 @@
+﻿Lina Genytė 500 4 0 False
+Aurimas Stumbrys 100 3 2 True
+Sandra Strazdaitė 1000 1 0 False
+2
+4312

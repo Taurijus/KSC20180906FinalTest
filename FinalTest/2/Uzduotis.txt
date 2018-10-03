@@ -14,4 +14,18 @@ Rezultatai
 	Rezultatų failą sudaro a eilučių ir b stulpelių (atskirtų kabliataškiais). Spalvų kodai įrašomi tokia pačia tvarka kaip ir pradiniame faile.
 	Kiekvienoje eilutėje turi būti b spalvų šešioliktainių kodų (sujungiami trys šešioliktainiai dviženkliai skaičiai be tarpų), atskirtų kabliataškiais ; (po paskutinio kodo kabliataškis nededamas).
 
+pvz.:
+Input:
+2 3
+0 128 0
+255 0 0
+255 255 255
+255 255 0
+255 0 0
+255 255 0
+Output:
+008000;FF0000;FFFFFF
+FFFF00;FF0000;FFFF00
+
+
  2 Balai
