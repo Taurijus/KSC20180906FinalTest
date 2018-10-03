@@ -184,18 +184,21 @@ namespace _4
           textBox_calk.Text += textBox_Main.Text.Remove(0, textBox_Main.Text.Length - 1);
         else textBox_calk.Text += textBox_Main.Text;
         textBox_Main.Text = "";
-        if (skaiciuok) textBox_calk.Text = DoMath(textBox_calk.Text).ToString();
+        if (skaiciuok)
+        {
+          textBox_calk.Text = DoMath(textBox_calk.Text).ToString();
+          if (veiksm == '√')
+          {
+            textBox_History.Text+="="+textBox_calk.Text;
+            textBox_Main.Text = textBox_calk.Text;
+            textBox_calk.Text = "";
+          }
+        }
         if (textBox_calk.Text.Length > 0)
         {
           textBox_calk.Text += veiksm;
           AddHistory();
         }
-
-        //if (veiksm == '√')
-        //{
-        //  textBox_Main.Text = DoMath(textBox_calk.Text).ToString();
-        //  textBox_calk.Text = "";
-        //};
       }
     }
 
